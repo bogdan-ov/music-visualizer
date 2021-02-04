@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="media/scss/style.css">
+    <title>Music draw</title>
+</head>
+<body>
+    <canvas></canvas>
+
+    <nav class="pad">
+        <div class="slot gap-1">
+            <button id="play-button">play</button>
+            <button id="stop-button">stop</button>
+            <input type="range" step="1" max="100" min="0" value="0">
+            <audio src="media/music/music.mp3"></audio>
+        </div>
+        <label>
+            <span style="cursor: pointer;">Upload music</span>
+            <input style="display: none;" type="file" />
+        </label>
+    </nav>
+
+    <script src="media/js/main.js" type="module"></script>
+</body>
+</html>
